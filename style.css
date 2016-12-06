@@ -1,43 +1,39 @@
-<<<<<<< HEAD
-
-
 main{
   height: 960px;
   width: 960px;
 }
 
-title{
+title {
  font-family: 'Shadows Into Light', cursive;
   font-size: 100px;
 
 }
 
-#header_create{
+
+
+.square {
+    margin-top: 20px;
+    width:200px;
+    height: 200px;
+     text-align: center;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+.square2 {
+  width:200px;
+    height: 200px;
   margin: 0 auto;
+   text-align: center;
+  border: 1px solid gray;
+   display: inline-block;
+  }
 
+
+.container {
+  margin: 0 auto;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
 }
-h1 {}
-  div {
-      float: left; /* so the surrounding div takes only the size of its content */
-      padding: 20px 0 0 20px; /* to get the same spacing everywhere */
-      overflow: hidden; /* this is not needed but i like to use it because clients never do what they shoul :P */
-      border: 4px solid black;
-  }
-
-   div {
-      float: left; /* places the divs next to each other */
-      width: 50px;
-      height: 50px;
-      margin-left: 0
-      20px 20px 0; /* makes the space between the divs */
-      border: 4px solid black;
-  }
-
-   div:nth-child 3n {
-      clear: both; /* you want the 3rd div to start a new line */
-  }
-=======
-div {
-  font-family: 'Graffiti Treat';
-}
->>>>>>> 6d9d29a95b4cd4c496e602bfeebb8207c3431207
