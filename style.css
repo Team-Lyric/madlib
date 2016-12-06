@@ -1,3 +1,13 @@
+body {
+
+}
+
+.create {
+  background-image: url(assets/other_better_sheetmusic.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 main{
   height: 960px;
   width: 960px;
