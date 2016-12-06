@@ -1,3 +1,39 @@
-div {
-  font-family: 'Graffiti Treat';
+main{
+  height: 960px;
+  width: 960px;
+}
+
+title {
+ font-family: 'Shadows Into Light', cursive;
+  font-size: 100px;
+
+}
+
+
+
+.square {
+    margin-top: 20px;
+    width:200px;
+    height: 200px;
+     text-align: center;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+.square2 {
+  width:200px;
+    height: 200px;
+  margin: 0 auto;
+   text-align: center;
+  border: 1px solid gray;
+   display: inline-block;
+  }
+
+
+.container {
+  margin: 0 auto;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
 }
