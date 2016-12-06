@@ -1,0 +1,37 @@
+
+
+main{
+  height: 960px;
+  width: 960px;
+}
+
+title{
+ font-family: 'Shadows Into Light', cursive;
+  font-size: 100px;
+
+}
+
+#header_create{
+  margin: 0 auto;
+
+}
+h1 {}
+  div {
+      float: left; /* so the surrounding div takes only the size of its content */
+      padding: 20px 0 0 20px; /* to get the same spacing everywhere */
+      overflow: hidden; /* this is not needed but i like to use it because clients never do what they shoul :P */
+      border: 4px solid black;
+  }
+
+   div {
+      float: left; /* places the divs next to each other */
+      width: 50px;
+      height: 50px;
+      margin-left: 0
+      20px 20px 0; /* makes the space between the divs */
+      border: 4px solid black;
+  }
+
+   div:nth-child 3n {
+      clear: both; /* you want the 3rd div to start a new line */
+  }
