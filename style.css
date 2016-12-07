@@ -21,29 +21,132 @@ title {
 
 
 
-.square {
-    margin-top: 20px;
-    width:200px;
-    height: 200px;
-     text-align: center;
-    border: 1px solid gray;
-    display: inline-block;
-}
-
-.square2 {
-  width:200px;
-    height: 200px;
-  margin: 0 auto;
-   text-align: center;
-  border: 1px solid gray;
-   display: inline-block;
-  }
-
-
-.container {
+div.container {
   margin: 0 auto;
     text-align: center;
     width: 500px;
     height: 500px;
     border: 1px solid black;
 }
+
+
+div.square {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+     text-align: center;
+    border: 1px solid black;
+    display: inline;
+    }
+
+div.square2 {
+   margin: 0 auto;
+  width: 150px;
+    height: 150px;
+   text-align: center;
+   border: 1px solid black;
+   display: inline;
+}
+
+
+
+div.Container2 {
+  margin: 0 auto;
+  height: 600px;
+  width: 600px;
+  z-index: 1;
+}
+
+<<<<<<< HEAD
+.img {
+
+    width: 600px;
+    height: 600px;
+    margin-top: -50%;
+   margin-left: -50%;
+}
+
+
+
+.player_info.country {
+font-family: 'Dekko', cursive;
+background-color: #DEB887;
+}
+
+
+.player_info.rock {
+font-family: 'Permanent Marker', cursive;
+background-color: #A1E68A;
+}
+
+
+.player_info.rnb {
+font-family: graffiti
+background-color: #70CAD4;
+}
+
+.player_info.pop {
+  background-color: #BF82E8;
+font-family: 'Covered By Your Grace', cursive;
+}
+
+div.country_lyrics {
+font-family: 'Dekko', cursive;
+background-image: url("greensplat.png");
+}
+
+
+div.rock_lyrics {
+font-family: 'Permanent Marker', cursive;
+background-image: url("redsplat.png");
+}
+
+
+div.rnb_lyrics {
+font-style: 'Graffiti Treat';
+background-image: url("bluesplat.png");
+}
+
+div.pop_lyrics {
+font-family: 'Covered By Your Grace', cursive;
+background-image: url("purplesplat.png");
+}
+
+
+
+/** <link href="https://fonts.googleapis.com/css?family=|Dekko|Covered+By+Your+Grace|Shadows+Into+Light/Permanent+Marker|" rel="stylesheet">
+=======
+body.hall {
+  background-color: black;
+}
+div.HoF {
+  background-color: white;
+  text-align: center;
+  background-image: url(assets/treblestaffsheet.gif);
+  opacity: .85;
+  background-size: cover;
+}
+
+h1.rap {
+  font-family: "Graffiti Treat", Georgia;
+  font-size: 50px;
+}
+
+h2.rap {
+  font-family: Georgia; serif;
+  font-size: 20px;
+}
+
+p.HoF {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+  opacity: 1;
+}
+
+span.libbed {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+>>>>>>> day_03
