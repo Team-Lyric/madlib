@@ -1,3 +1,13 @@
+body {
+
+}
+
+.create {
+  background-image: url(assets/other_better_sheetmusic.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 main{
   height: 960px;
   width: 960px;
@@ -47,6 +57,7 @@ div.Container2 {
   z-index: 1;
 }
 
+<<<<<<< HEAD
 .img {
 
     width: 600px;
@@ -104,3 +115,38 @@ background-image: url("purplesplat.png");
 
 
 /** <link href="https://fonts.googleapis.com/css?family=|Dekko|Covered+By+Your+Grace|Shadows+Into+Light/Permanent+Marker|" rel="stylesheet">
+=======
+body.hall {
+  background-color: black;
+}
+div.HoF {
+  background-color: white;
+  text-align: center;
+  background-image: url(assets/treblestaffsheet.gif);
+  opacity: .85;
+  background-size: cover;
+}
+
+h1.rap {
+  font-family: "Graffiti Treat", Georgia;
+  font-size: 50px;
+}
+
+h2.rap {
+  font-family: Georgia; serif;
+  font-size: 20px;
+}
+
+p.HoF {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+  opacity: 1;
+}
+
+span.libbed {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+>>>>>>> day_03
