@@ -11,18 +11,27 @@
     <header class="header_create">
     </header>
     <main class="main_create">
-      <form class="player_info"> <!-- This is the form that needs to "disappear" when info is entered-->
+
+      <form class="tbd" id ="player_info"> <!-- *****ALTEREDBYWILL*****This is the form that needs to "disappear" when info is entered-->
           Player Name: <br /><input type="text" name="name"></input><br />
           Email Address: <br /><input type="text" name="email"></input>
-          <button type="submit">Let's Play!</button>
+          <button type="submit" id ="new_user">Let's Play!</button>  <!-- ******ALTEREDBYWILL****** -->
       </form>
+
       <form class="tbd" id="game_input" style='visibility:hidden;'> <!-- This is only made visible after a track is chosen on the main page and the previous form w/ email & player name has been chosen-->
-          <input type="text" class="game_input"></input>
-          <button type="submit">OK, Next!</button>
+          PLEASE ENTER A
+          <section id = "splatter">
+            <!--background of section is "splat" img, text on top is large, clear and is a word drawn from the needed array of the template object  -->
+          </section>
+          <input type="text" class="game_input" id="getterField"></input>
+          <button type="submit" id="getterButton" >OK, Next!</button>
       </form>
+
       <div class="lyrics" id="lyrics_load">Lyrics Load In this Div <!-- This is the div for when the lyrics load -->
       </div>
+
     </main>
+
     <footer class="footer_create">
       <nav>
       </nav>
