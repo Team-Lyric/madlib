@@ -1,28 +1,27 @@
-<<<<<<< HEAD
 main {
   height: 960px;
   width: 960px;
-=======
-
-body {
-
->>>>>>> 78da6c491598ed5f2bb59db24adb8aadc23adc9c
 }
 
 
-.home {
-  background-image: url("./assets/rredsplatbooyeah.png");
+.create {
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
 }
 
+.home {
+  background-color: black;
+  position: absolute;
+
+}
 
 
 header {
 
  font-family: 'Shadows Into Light', cursive;
-  font-size: 100px;
+ font-size: 100px;
  margin: 0 auto;
  display: inline;
  position: relative;
@@ -32,10 +31,8 @@ header {
 
 .circle1: hover{
 
-
-  clip: 25%, top;
-
-	overflow: hidden;
+  position: 25%, top;
+  overflow: hidden;
 	position: relative;
 	cursor: default;
   transform-style: scale(1);
@@ -44,7 +41,7 @@ header {
 
 .circle2: hover{
 
-  clip: 25%, bottom;
+   clip: 25%, bottom;
 	position: relative;
 	cursor: default;
   transform-style: scale(1);
@@ -80,17 +77,14 @@ header {
 
 
 
-.Container2 {
+.container2 {
   margin: 0 auto;
   height: 600px;
   width: 600px;
   z-index: 1;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 78da6c491598ed5f2bb59db24adb8aadc23adc9c
 .img {
 
   width: 600px;
@@ -144,10 +138,9 @@ font-family: 'Covered By Your Grace', cursive;
 background-image: url("purplesplat.png");
 }
 
-<<<<<<< HEAD
 
 
-/** <link href="https://fonts.googleapis.com/css?family=|Dekko|Covered+By+Your+Grace|Shadows+Into+Light/Permanent+Marker|" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=|Dekko|Covered+By+Your+Grace|Shadows+Into+Light/Permanent+Marker|" rel="stylesheet">
 =======
 body.hall {
   background-color: black;
@@ -211,7 +204,7 @@ h2.rock {
 }
 
 h3.rock {
-  
+
 }
 
 p.rock {
