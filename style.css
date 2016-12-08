@@ -1,66 +1,93 @@
-
-body {
-
-}
-
-.create {
-  background-image: url(assets/other_better_sheetmusic.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-main{
+main {
   height: 960px;
   width: 960px;
 }
 
-title {
+
+.create {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.home {
+  background-color: black;
+  position: absolute;
+
+}
+
+
+header {
+
  font-family: 'Shadows Into Light', cursive;
-  font-size: 100px;
+ font-size: 100px;
+ margin: 0 auto;
+ display: inline;
+ position: relative;
+
+}
+
+
+.circle1: hover{
+
+  position: 25%, top;
+  overflow: hidden;
+	position: relative;
+	cursor: default;
+  transform-style: scale(1);
+
+}
+
+.circle2: hover{
+
+   clip: 25%, bottom;
+	position: relative;
+	cursor: default;
+  transform-style: scale(1);
 
 }
 
 
 
-div.container {
-  margin: 0 auto;
-    text-align: center;
+
+.container {
+   margin: 0 auto;
     width: 500px;
     height: 500px;
     border: 1px solid black;
 }
 
 
-div.square {
+.square {
     margin: 0 auto;
     width: 150px;
     height: 150px;
-     text-align: center;
     border: 1px solid black;
     display: inline;
     }
 
-div.square2 {
+.square2 {
    margin: 0 auto;
   width: 150px;
     height: 150px;
-   text-align: center;
    border: 1px solid black;
    display: inline;
 }
 
 
 
-div.Container2 {
+.container2 {
   margin: 0 auto;
   height: 600px;
   width: 600px;
   z-index: 1;
 }
 
+
 .img {
 
-    width: 600px;
+  width: 600px;
     height: 600px;
     margin-top: -50%;
    margin-left: -50%;
@@ -90,28 +117,31 @@ background-color: #70CAD4;
 font-family: 'Covered By Your Grace', cursive;
 }
 
-div.country_lyrics {
+.country_lyrics {
 font-family: 'Dekko', cursive;
 background-image: url("greensplat.png");
 }
 
-
-div.rock_lyrics {
+.rock_lyrics {
 font-family: 'Permanent Marker', cursive;
 background-image: url("redsplat.png");
 }
 
 
-div.rnb_lyrics {
+.rnb_lyrics {
 font-style: 'Graffiti Treat';
 background-image: url("bluesplat.png");
 }
 
-div.pop_lyrics {
+.pop_lyrics {
 font-family: 'Covered By Your Grace', cursive;
 background-image: url("purplesplat.png");
 }
 
+
+
+ <link href="https://fonts.googleapis.com/css?family=|Dekko|Covered+By+Your+Grace|Shadows+Into+Light/Permanent+Marker|" rel="stylesheet">
+=======
 body.hall {
   background-color: black;
 }
@@ -174,7 +204,7 @@ h2.rock {
 }
 
 h3.rock {
-  
+
 }
 
 p.rock {
@@ -215,3 +245,4 @@ span.libbed {
   font-weight: bold;
   color: red;
 }
+>>>>>>> 78da6c491598ed5f2bb59db24adb8aadc23adc9c
