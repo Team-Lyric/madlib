@@ -129,21 +129,21 @@ h2.hall {
 }
 
 div.HoF {
-  margin-left: 50px;
+  margin-left: 350px;
   margin-right: auto;
   margin-top: 30px;
-  width: 300px;
+  background-size: 300px 500;
   height: 500px;
   text-align: center;
   background-image: url(assets/treblestaffsheet.gif);
   opacity: .85;
-  background-size: cover;
   overflow: hidden;
+  -webkit-transition: width 2s, height 4s;
+  transition: width 2s, height 4s;
 }
 
 div.HoF:hover {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
   background-image: url(assets/treblestaffsheet.gif);
   opacity: .85;
@@ -174,7 +174,7 @@ h2.rock {
 }
 
 h3.rock {
-  
+
 }
 
 p.rock {
