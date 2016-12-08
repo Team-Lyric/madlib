@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 body {
 
 }
@@ -59,7 +58,6 @@ div.Container2 {
   z-index: 1;
 }
 
-<<<<<<< HEAD
 .img {
 
     width: 600px;
@@ -83,7 +81,7 @@ background-color: #A1E68A;
 
 
 .player_info.rnb {
-font-family: graffiti
+font-family: 'Graffiti Treat';
 background-color: #70CAD4;
 }
 
@@ -155,6 +153,46 @@ div.HoF:hover {
   overflow: visible;
 }
 
+h1.country {
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+h2.country {
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+p.country {
+
+}
+
+h1.rock {
+  font-family: 'Permanent Marker', cursive;
+}
+
+h2.rock {
+  font-family: 'Permanent Marker', cursive;
+}
+
+h3.rock {
+  
+}
+
+p.rock {
+
+}
+
+h1.pop {
+  font-family: 'Dekko', cursive;
+}
+
+h2.pop {
+  font-family: 'Dekko', cursive;
+}
+
+p.pop {
+
+}
+
 h1.rap {
   font-family: "Graffiti Treat", Georgia;
   font-size: 50px;
@@ -165,7 +203,7 @@ h2.rap {
   font-size: 20px;
 }
 
-p.HoF {
+p.rap {
   font-size: 16px;
   font-weight: bold;
   font-family: sans-serif;
@@ -177,4 +215,3 @@ span.libbed {
   font-weight: bold;
   color: red;
 }
->>>>>>> day_04
