@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 main {
   height: 960px;
   width: 960px;
+=======
+
+body {
+
+>>>>>>> 78da6c491598ed5f2bb59db24adb8aadc23adc9c
 }
 
 
@@ -81,7 +87,10 @@ header {
   z-index: 1;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 78da6c491598ed5f2bb59db24adb8aadc23adc9c
 .img {
 
   width: 600px;
@@ -105,7 +114,7 @@ background-color: #A1E68A;
 
 
 .player_info.rnb {
-font-family: graffiti
+font-family: 'Graffiti Treat';
 background-color: #70CAD4;
 }
 
@@ -135,6 +144,112 @@ font-family: 'Covered By Your Grace', cursive;
 background-image: url("purplesplat.png");
 }
 
+<<<<<<< HEAD
 
 
 /** <link href="https://fonts.googleapis.com/css?family=|Dekko|Covered+By+Your+Grace|Shadows+Into+Light/Permanent+Marker|" rel="stylesheet">
+=======
+body.hall {
+  background-color: black;
+}
+
+h1.logo {
+  font-family: "Sigmar One";
+  color: #00cbcb;
+}
+
+h2.hall {
+  font-family: "Monoton";
+  color: #F58916;
+  font-size: 50px;
+  text-align: center;
+}
+
+div.HoF {
+  margin-left: 50px;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  background-image: url(assets/treblestaffsheet.gif);
+  opacity: .85;
+  background-size: cover;
+  overflow: hidden;
+}
+
+div.HoF:hover {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-image: url(assets/treblestaffsheet.gif);
+  opacity: .85;
+  background-size: cover;
+  width: 960px;
+  height: 1500px;
+  overflow: visible;
+}
+
+h1.country {
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+h2.country {
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+p.country {
+
+}
+
+h1.rock {
+  font-family: 'Permanent Marker', cursive;
+}
+
+h2.rock {
+  font-family: 'Permanent Marker', cursive;
+}
+
+h3.rock {
+  
+}
+
+p.rock {
+
+}
+
+h1.pop {
+  font-family: 'Dekko', cursive;
+}
+
+h2.pop {
+  font-family: 'Dekko', cursive;
+}
+
+p.pop {
+
+}
+
+h1.rap {
+  font-family: "Graffiti Treat", Georgia;
+  font-size: 50px;
+}
+
+h2.rap {
+  font-family: Georgia; serif;
+  font-size: 20px;
+}
+
+p.rap {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+  opacity: 1;
+}
+
+span.libbed {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+>>>>>>> 78da6c491598ed5f2bb59db24adb8aadc23adc9c
