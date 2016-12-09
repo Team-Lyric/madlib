@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <!--*************EDITED BY WILL************  -->
     <title>Hall of Fame</title>
-    <link href="https://fonts.googleapis.com/css?family=Audiowide|Montserrat|Dekko|Covered+By+Your+Grace|Shadows+Into+Light/Permanent+Marker|Bungee+Shade|Graffiti+Treat|Chewy|Luckiest+Guy|Monoton|Paytone+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Montserrat|Dekko|Covered+By+Your+Grace|Shadows+Into+Light|Permanent+Marker|Bungee+Shade|Graffiti+Treat|Chewy|Luckiest+Guy|Monoton|Paytone+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body class="hall">
-    <img class="logo" src="assets/LyricLibsHeader.png">
+    <img class="banner" src="assets/LyricLibsHeader.png">
     <h2 class="hall">Hall of Fame</h2>
     <header class="header_hall">
     </header>
