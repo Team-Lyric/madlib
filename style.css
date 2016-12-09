@@ -101,40 +101,40 @@ img.record_hover {
   z-index: 3;
 }
 
-#rock_piece:hover {
+div:#rock_piece img:hover {
   position: absolute;
   top: 50px;
   left: 50px;
   height: 300px;
   width: 300px;
   border: 0px;
-  z-index: 4;
+  z-index: 2;
   background-color: blue;
 }
 
-#pop_piece {
+div#pop_piece img:hover {
   position: absolute;
   top: 50px;
   right: 50px;
   height: 300px;
   width: 300px;
   border: 0px;
-  z-index: 4;
+  z-index: 2;
   background-color: blue;
 }
 
-#rnb_piece:hover {
+div#rnb_piece img:hover {
   position: absolute;
   top: 350px;
   left: 50px;
   height: 300px;
   width: 300px;
   border: 0px;
-  z-index: 4;
+  z-index: 2;
   background-color: blue;
 }
 
-#country_piece:hover {
+div#country_piece img:hover {
   position: absolute;
   top: 350px;
   right: 50px;
