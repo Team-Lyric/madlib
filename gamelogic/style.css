@@ -1,3 +1,8 @@
+main {
+  height: 960px;
+  width: 960px;
+}
+
 
 .create {
   background-color: black;
@@ -6,35 +11,192 @@
   position: absolute;
 }
 
+.home {
+  background-color: black;
+  position: absolute;
+
+
+/*header {
+
+ font-family: 'Shadows Into Light', cursive;
+ font-size: 100px;
+ margin: 0 auto;
+ display: inline;
+ position: relative;
+
+}*/
+
+header {
+  margin-left: 15px;
+}
+
+img.banner {
+  height: 120px;
+}
+
+div.container {
+  padding: 50px;
+   margin-left: 90px;
+   margin-top: -300px;
+   width: 500px;
+   height: 500px;
+   top: 30%;
+   left: 30%;
+   position: relative;
+}
+
+img.record1 {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
+}
+
+#rock_link {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  z-index: 2;
+}
+
+#pop_link {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  z-index: 2;
+}
+
+#rnb_link {
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  z-index: 2;
+}
+
+#country_link {
+  position: absolute;
+  top: 300px;
+  right: 50px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  z-index: 2;
+}
+
+#rock_piece {
+  top: 50px;
+  left: 60px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  z-index: : 2;
+}
+
+#pop_piece {
+  top: 300px;
+  right: 50px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+}
+
+#rock_piece {
+  /*position: absolute;
+  top: 50px;
+  left: 60px;*/
+  display: block;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+}
+
+#pop_piece {
+  /*position: absolute;
+  top: 0px;
+  right: -10px;*/
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+  display: block;
+}
+
+#rnb_piece {
+  /*position: absolute;
+  top: 250px;
+  left: 60px;*/
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+  display: block;
+}
+
+#country_piece {
+  /*position: absolute;
+  top: 250px;
+  right: 40px;*/
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+  display: block;
+}
+
+/*#rock_piece:hover {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  height: 300px;
+  width: 300px;
+  border: 0px;
+}
+
+#pop_piece:hover {
+
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+}
+
+/*#rnb_piece {
+  position: absolute;
+  top: 250px;
+  left: 60px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+}
+
+/*#country_piece {
 
 }
 
-
-.country_player {
-font-family: 'Dekko', cursive;
-background-color: #DEB887;
+#rnb_piece:hover {
+  position: absolute;
+  top: 350px;
+  left: 60px;
+  height: 300px;
+  width: 300px;
+  border: 0px;
+  opacity: 1;
 }
-
-.rock_player {
-  position: relative;
-font-family: 'Permanent Marker', cursive;
-background-color: #A1E68A;
-}
-
-
-.rnb_player {
-font-family: 'Graffiti Treat';
-background-color: #70CAD4;
-
-}
-
-.pop_player {
-  background-color: #BF82E8;
-font-family: 'Covered By Your Grace', cursive;
-}
-
-
-
 
 #game_input {
 margin-bottom: 20px;
@@ -45,19 +207,90 @@ border-radius:5px;
 border:1px solid #7ac9b7;
 }
 
+.dark-matter {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    background: #555;
+    padding: 20px 30px 20px 30px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #D3D3D3;
+    text-shadow: 1px 1px 1px #444;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
 
 
-#country_lyrics {
-font-family: 'Dekko', cursive;
+}
+ .dark-matter game_input {
+    background: #DFDFDF url('down-arrow.png') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    color: #525252;
+    line-height: 25px;
+}
 
-width  : 740px;
-height : 498px;
-margin : 0 auto;
-background: #FFF url("../treblestaffsheet.png");
+.dark-matter textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+
+button {
+    background: #FFCC02;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #585858;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-shadow: 1px 1px 1px #FFE477;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #3D3D3D;
+    -webkit-box-shadow:1px 1px 1px #3D3D3D;
+    -moz-box-shadow:1px 1px 1px #3D3D3D;
+}
+
+dark-matter.button:hover {
+    color: #333;
+    background-color: #EBEBEB;
+}
+
+
+
+#country_piece:hover {
+  position: absolute;
+  top: 250px;
+  right: 40px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+}
+  opacity: 1;
+}*/
+
+
+
+#player_info {
+
+background-color: #DEB887;
+  position: relative;
+font-family: 'Permanent Marker', cursive;
 
 }
 
-#rock_lyrics {
+
+
+
+}
+
+.lyrics {
 font-family: 'Permanent Marker', cursive;
 background-image: url("../redsplat.png");
 width  : 740px;
@@ -68,21 +301,124 @@ background: #FFF url("../treblestaffsheet.png");
 
 }
 
-#rnb_lyrics {
-font-style: 'Graffiti Treat';
-background-image: url("../bluesplat.png");
-width  : 740px;
-height : 498px;
-margin : 0 auto;
 
-background: #FFF url("../treblestaffsheet.png");
+
+
+body.hall {
+  background-color: black;
 }
 
-#pop_lyrics {
-font-family: 'Covered By Your Grace', cursive;
-background-image: url("../purple.png");
-width  : 740px;
-height : 498px;
-margin : 0 auto;
-background: #FFF url("../treblestaffsheet.png");
+h2.hall {
+  font-family: "Monoton";
+  color: #F58916;
+  font-size: 50px;
+  text-align: center;
+}
+
+div.HoF {
+  margin-left: 350px;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  background-size: 300px 500;
+  height: 490px;
+  text-align: center;
+  background-image: url(assets/treblestaffsheet.png);
+  background-color: white;
+  overflow: hidden;
+  -webkit-transition: width 4s, height 4s;
+  transition: width 4s, height 4s;
+  -webkit-transition-timing-function: ease;
+}
+
+
+div.HoF:hover {
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  background-image: url(assets/treblestaffsheet.png);
+  background-color: white;
+  background-size: cover;
+  width: 100%;
+  height: 1500px;
+  overflow: hidden;
+}
+
+h1.country {
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+h2.country {
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+h3.country {
+  font-family: 'Montserrat';
+  color: #3449B7;
+}
+
+p.country {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+h1.rock {
+  font-family: 'Permanent Marker', cursive;
+}
+
+h2.rock {
+  font-family: 'Permanent Marker', cursive;
+}
+
+h3.rock {
+  font-family: 'Permanent Marker', cursive;
+  color: #3449B7;
+}
+
+p.rock {
+  font-family: 'Permanent Marker', cursive;
+}
+
+h1.pop {
+  font-family: 'Dekko', cursive;
+}
+
+h2.pop {
+  font-family: 'Dekko', cursive;
+}
+
+h3.pop {
+  color: #3449B7;
+}
+
+p.pop {
+
+}
+
+h1.rap {
+  font-family: "Graffiti Treat", Georgia;
+  font-size: 50px;
+}
+
+h2.rap {
+  font-family: Georgia; serif;
+  font-size: 20px;
+}
+
+h3.rap {
+  font-family: Georgia; serif;
+  color: #3449B7;
+}
+
+p.rap {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Georgia, sans-serif;
+  opacity: 1;
+}
+
+span.libbed {
+  font-size: 18px;
+  font-weight: bold;
+  color: #F25607;
 }
