@@ -60,10 +60,7 @@ img.record1 {
   height: 250px;
   width: 250px;
   border: 0px;
-<<<<<<< HEAD
-=======
   z-index: 2;
->>>>>>> a3932997104d0e115d7c210b27635488715e4181
 }
 
 #pop_link {
@@ -73,10 +70,7 @@ img.record1 {
   height: 250px;
   width: 250px;
   border: 0px;
-<<<<<<< HEAD
-=======
   z-index: 2;
->>>>>>> a3932997104d0e115d7c210b27635488715e4181
 }
 
 #rnb_link {
@@ -96,16 +90,16 @@ img.record1 {
   height: 250px;
   width: 250px;
   border: 0px;
+  z-index: 2;
 }
 
 #rock_piece {
-  position: absolute;
   top: 50px;
   left: 60px;
   height: 250px;
   width: 250px;
   border: 0px;
-  opacity: 0;
+  z-index: : 2;
 }
 
 #pop_piece {
@@ -114,7 +108,7 @@ img.record1 {
   height: 250px;
   width: 250px;
   border: 0px;
-  z-index: 2;
+  opacity: 0;
 }
 
 #rock_piece {
@@ -132,11 +126,11 @@ img.record1 {
   /*position: absolute;
   top: 0px;
   right: -10px;*/
-  display: block;
   height: 250px;
   width: 250px;
   border: 0px;
   opacity: 0;
+  display: block;
 }
 
 #rnb_piece {
