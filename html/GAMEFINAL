@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family="Graffiti+Treat">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Dekko|Covered+By+Your+Grace|Shadows+Into+Light/Permanent+Marker|Bungee+Shade|Graffiti+Treat|Chewy|Luckiest+Guy|Monoton|Paytone+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>LyricLibs Creation</title>
   </head>
   <body>
   <body class="create">
     <header class="header_create">
+      <img class="logo" src="assets/LyricLibsBanner.png" class="banner">
     </header>
     <main class="main_create">
 
@@ -30,13 +31,13 @@
           </section>
       </form>
 
-      <div class="tbd" id="lyrics_load" style='visibility:hidden;'>Lyrics Load In this Div <!-- This is the div for when the lyrics load -->
+      <div class="lyrics" id="lyrics_load" style='visibility:hidden;'>Lyrics Load In this Div <!-- This is the div for when the lyrics load -->
         <h1 id="title"></h1>
-        <article class="tbd" id="finishedLib">
+        <article class="" id="finishedLib">
 
         </article>
         <br>
-        <section id="controlPannel">
+        <section id="controllPannel">
             Like your LyricLib? Want to share with the world?<br>
             Add your unique LyricLib to the HALL of FAME!
             <button type="button" name="hOf" id="hOf">Add</button>
