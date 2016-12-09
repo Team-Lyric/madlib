@@ -18,12 +18,13 @@ var gameForm = document.getElementById('game_input');
 var lyricDisplayArea = document.getElementById('lyrics_load');
 
 //template constructor
-function Template ( title, template, needed, input, lyricLib){
+function Template ( title, template, needed, input, lyricLib, grenre){
   this.songTitle = title; //song title *string*
   this.template = template; // string of lyrics with omitted words *string*
   this.needed = needed; // list of omitted words (as parts of speech) in order of appearance in this.template *array*
   this.input = input; // user input by word *array*
   this.lyricLib = lyricLib; // array of user input words, order and length will correspond to this.needed array*array*
+  this.genre = genre;
 }
 Template.prototype.insert = function () {
   for(var j = 0 ; j < this.input.length; j++ ){ //for every word in the input array, we need to find a home
@@ -43,7 +44,8 @@ var popTemplate1 = new Template (/*title*/'Like a Virgin' , /*template*/ '[Verse
  /*input array to hold user input*/
  [],
 /* template plus input*/
-['[Verse 1] \n I made it through the wilderness \n Somehow I made it through \n Didn\'t know how lost I was until I found you \n I was beat, incomplete, I\'d been had \n I was' , '*reaplceme*' , ' and ' , '*reaplceme*' , ', but you made me feel \n Yeah, you made me feel shiny and new \n [Chorus 1] \n  \n Like a ' , '*reaplceme*' , ' \n Touched for the very first time \n Like a ' , '*reaplceme*' , ' \n When your heart beats next to mine \n [Verse 2] \n Gonna ' , '*reaplceme*' , '  you all my love, boy \n My fear is fading fast \n Been saving it all for you, cause only ' , '*reaplceme*' , ' can last \n You\'re so fine and you\'re mine \n Make me ' , '*reaplceme*', ', yeah, you make me bold \n Oh, your love  thawed out \n Yeah, your ' , '*reaplceme*', ' thawed out what was scared and cold \n \n [Chorus 2] \n Like a ' , '*reaplceme*' , ' (hey) \n Touched for the very first time \n Like a ' , '*reaplceme*' , ' \n With your heart next to mine \n \n [Verse 3] \n You\'re so fine and you\'re mine \n I\'ll be yours \'til the end of ' , '*reaplceme*' , ' \n \'Cause you made me ' , '*reaplceme*' , ' \n Yeah, you made me ' , '*reaplceme*' , ' I\'ve nothing to hide \n \n [Chorus 2] \n Like a ' , '*reaplceme*' , ' (hey) \n touched for the very first time \n Like a ' , '*reaplceme*' , ' \n With your ' , '*reaplceme*' , ' beat next to mine \n \n [Outro] \n Like a ' , '*reaplceme*' , ' \n Like a ' , '*reaplceme*' , ' \n Feels so good inside \n When you hold me, and your ' , '*reaplceme*' , ' beats, and you Noun me \n Ooh, ' , '*reaplceme*' , ' yeah \n Can\'t you hear my ' , '*reaplceme*' , ' beat for the very first time ']);
+['[Verse 1] \n I made it through the wilderness \n Somehow I made it through \n Didn\'t know how lost I was until I found you \n I was beat, incomplete, I\'d been had \n I was' , '*reaplceme*' , ' and ' , '*reaplceme*' , ', but you made me feel \n Yeah, you made me feel shiny and new \n [Chorus 1] \n  \n Like a ' , '*reaplceme*' , ' \n Touched for the very first time \n Like a ' , '*reaplceme*' , ' \n When your heart beats next to mine \n [Verse 2] \n Gonna ' , '*reaplceme*' , '  you all my love, boy \n My fear is fading fast \n Been saving it all for you, cause only ' , '*reaplceme*' , ' can last \n You\'re so fine and you\'re mine \n Make me ' , '*reaplceme*', ', yeah, you make me bold \n Oh, your love  thawed out \n Yeah, your ' , '*reaplceme*', ' thawed out what was scared and cold \n \n [Chorus 2] \n Like a ' , '*reaplceme*' , ' (hey) \n Touched for the very first time \n Like a ' , '*reaplceme*' , ' \n With your heart next to mine \n \n [Verse 3] \n You\'re so fine and you\'re mine \n I\'ll be yours \'til the end of ' , '*reaplceme*' , ' \n \'Cause you made me ' , '*reaplceme*' , ' \n Yeah, you made me ' , '*reaplceme*' , ' I\'ve nothing to hide \n \n [Chorus 2] \n Like a ' , '*reaplceme*' , ' (hey) \n touched for the very first time \n Like a ' , '*reaplceme*' , ' \n With your ' , '*reaplceme*' , ' beat next to mine \n \n [Outro] \n Like a ' , '*reaplceme*' , ' \n Like a ' , '*reaplceme*' , ' \n Feels so good inside \n When you hold me, and your ' , '*reaplceme*' , ' beats, and you Noun me \n Ooh, ' , '*reaplceme*' , ' yeah \n Can\'t you hear my ' , '*reaplceme*' , ' beat for the very first time '],
+/*song genre*/'pop');
 //21
 
 var rockTemplate1 = new Template ( 'Welcome to the Jungle',' ', [' ', ' '], [' ',' '], ' ');
