@@ -5,34 +5,34 @@ var popSplash = document.getElementById('pop_piece');
 var rnbSplash = document.getElementById('rnb_piece');
 var countrySplash = document.getElementById('country_piece');
 
-rockSplash.addEventListener("mouseover", function(event) {
+rockSplash.addEventListener('mouseover', function(event) {
   event.target.style.opacity = 1;
 }, false);
 
-rockSplash.addEventListener("mouseout", function(event) {
+rockSplash.addEventListener('mouseout', function(event) {
   event.target.style.opacity = 0;
 }, false);
 
-popSplash.addEventListener("mouseover", function(event) {
+popSplash.addEventListener('mouseover', function(event) {
   event.target.style.opacity = 1;
 }, false);
 
-popSplash.addEventListener("mouseout", function(event) {
+popSplash.addEventListener('mouseout', function(event) {
   event.target.style.opacity = 0;
 }, false);
 
-rnbSplash.addEventListener("mouseover", function(event) {
+rnbSplash.addEventListener('mouseover', function(event) {
   event.target.style.opacity = 1;
 }, false);
 
-rnbSplash.addEventListener("mouseout", function(event) {
+rnbSplash.addEventListener('mouseout', function(event) {
   event.target.style.opacity = 0;
 }, false);
 
-countrySplash.addEventListener("mouseover", function(event) {
+countrySplash.addEventListener('mouseover', function(event) {
   event.target.style.opacity = 1;
 }, false);
 
-countrySplash.addEventListener("mouseout", function(event) {
+countrySplash.addEventListener('mouseout', function(event) {
   event.target.style.opacity = 0;
 }, false);
