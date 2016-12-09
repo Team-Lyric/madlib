@@ -65,84 +65,76 @@ img.record_hover {
   position: absolute;
   top: 50px;
   left: 50px;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 3;
 }
 
 #pop_link {
   position: absolute;
   top: 50px;
   right: 50px;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 3;
 }
 
 #rnb_link {
   position: absolute;
-  top: 350px;
-  left: 50px;
-  height: 300px;
-  width: 300px;
+  top: 50px;
+  left: 0px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 3;
 }
 
 #country_link {
   position: absolute;
-  top: 350px;
-  right: 50px;
-  height: 300px;
-  width: 300px;
+  top: 50px;
+  right: 0px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 3;
 }
 
-div:#rock_piece img:hover {
+#rock_piece {
   position: absolute;
   top: 50px;
-  left: 50px;
-  height: 300px;
-  width: 300px;
+  left: 60px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 2;
-  background-color: blue;
+  opacity: 0;
 }
 
-div#pop_piece img:hover {
+#pop_piece {
   position: absolute;
-  top: 50px;
-  right: 50px;
-  height: 300px;
-  width: 300px;
+  top: 0px;
+  right: -10px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 2;
-  background-color: blue;
+  opacity: 0;
 }
 
-div#rnb_piece img:hover {
+#rnb_piece {
   position: absolute;
-  top: 350px;
-  left: 50px;
-  height: 300px;
-  width: 300px;
+  top: 250px;
+  left: 60px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 2;
-  background-color: blue;
+  opacity: 0;
 }
 
-div#country_piece img:hover {
+#country_piece {
   position: absolute;
-  top: 350px;
-  right: 50px;
-  height: 300px;
-  width: 300px;
+  top: 250px;
+  right: 40px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 4;
-  background-color: blue;
+  opacity: 0;
 }
 
 .player_info.country {

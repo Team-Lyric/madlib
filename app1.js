@@ -5,6 +5,11 @@ var pop = document.getElementById('pop_link');
 var rnb = document.getElementById('rnb_link');
 var country = document.getElementById('country_link');
 
+var rockSplash = document.getElementById('rock_piece"');
+var popSplash = document.getElementById('pop_piece');
+var rnbSplash = document.getElementById('rnb_piece');
+var countrySplash = document.getElementById('country_piece');
+
 rock.addEventListener('click', rockHandler);
 pop.addEventListener('click', popHandler);
 rnb.addEventListener('click', rnbHandler);
@@ -28,11 +33,6 @@ function rockHandler(event){
 }
 
 'use strict';
-
-var rockSplash = document.getElementById("rock_piece");
-var popSplash = document.getElementById("pop_piece");
-var rnbSplash = document.getElementById("rnb_piece");
-var countrySplash = document.getElementById("country_piece");
 
 rockSplash.addEventListener("mouseover", function(event) {
   event.target.style.opacity = 1;
