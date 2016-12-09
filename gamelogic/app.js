@@ -1,7 +1,4 @@
 'use strict';
-/*dummy vars and tokens*/
-localStorage.setItem('genreChoice', 'pop');
-// --------------------------------------------------
 //global varriables
 
 var users = [];
