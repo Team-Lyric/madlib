@@ -249,5 +249,5 @@ function hOfHandler (event){ //"post" this sessions lyricLib on the Hall of Fame
   localStorage.setItem('users', lsUsers);//restrigify and save new values for thisUser over previous entry in LocalStorage
 
   alert('Entering the HALL OF FAME');
-  window.location = 'index3.html'; //send them to the hall of fame!
+  window.location = 'HOFFINAL.html'; //send them to the hall of fame!
 }
