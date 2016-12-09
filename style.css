@@ -17,8 +17,7 @@ main {
 
 }
 
-
-header {
+/*header {
 
  font-family: 'Shadows Into Light', cursive;
  font-size: 100px;
@@ -26,14 +25,22 @@ header {
  display: inline;
  position: relative;
 
+}*/
+
+header {
+  margin-left: 15px;
+}
+
+img.banner {
+  height: 120px;
 }
 
 div.container {
   padding: 50px;
-   margin-left: -300 px;
+   margin-left: 90px;
    margin-top: -300px;
-   width: 600px;
-   height: 600px;
+   width: 500px;
+   height: 500px;
    top: 30%;
    left: 30%;
    position: relative;
@@ -41,59 +48,159 @@ div.container {
 
 img.record1 {
   position: absolute;
-  height: 600px;
-  width: 600px;
-  z-index: 2;
-}
-
-
-img.record_hover {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    z-index: 1;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
 }
 
 #rock_link {
   position: absolute;
   top: 50px;
   left: 50px;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 3;
+  z-index: 2;
 }
 
 #pop_link {
   position: absolute;
   top: 50px;
   right: 50px;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 3;
+  z-index: 2;
 }
 
 #rnb_link {
   position: absolute;
-  top: 350px;
+  top: 300px;
   left: 50px;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 3;
+  z-index: 2;
 }
 
 #country_link {
   position: absolute;
-  top: 350px;
+  top: 300px;
   right: 50px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  z-index: 2;
+}
+
+#rock_piece {
+  top: 50px;
+  left: 60px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  z-index: : 2;
+}
+
+#pop_piece {
+  top: 300px;
+  right: 50px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+}
+
+#rock_piece {
+  /*position: absolute;
+  top: 50px;
+  left: 60px;*/
+  display: block;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+}
+
+#pop_piece {
+  /*position: absolute;
+  top: 0px;
+  right: -10px;*/
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+  display: block;
+}
+
+#rnb_piece {
+  /*position: absolute;
+  top: 250px;
+  left: 60px;*/
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+  display: block;
+}
+
+#country_piece {
+  /*position: absolute;
+  top: 250px;
+  right: 40px;*/
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+  display: block;
+}
+
+/*#rock_piece:hover {
+  position: absolute;
+  top: 50px;
+  left: 60px;
   height: 300px;
   width: 300px;
   border: 0px;
-  z-index: 3;
 }
 
+#pop_piece:hover {
+>>>>>>> a3932997104d0e115d7c210b27635488715e4181
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+<<<<<<< HEAD
+  opacity: 0;
+}
+
+#rnb_piece {
+  position: absolute;
+  top: 250px;
+  left: 60px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+}
+
+#country_piece {
+=======
+}
+
+#rnb_piece:hover {
+  position: absolute;
+  top: 350px;
+  left: 60px;
+  height: 300px;
+  width: 300px;
+  border: 0px;
+  opacity: 1;
+}
+
+<<<<<<< HEAD
 
 .dark-matter {
     margin-left: auto;
@@ -187,6 +294,24 @@ dark-matter.button:hover {
 }
 
 #player_info_country {
+=======
+#country_piece:hover {
+>>>>>>> a3932997104d0e115d7c210b27635488715e4181
+  position: absolute;
+  top: 250px;
+  right: 40px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+<<<<<<< HEAD
+  opacity: 0;
+}
+=======
+  opacity: 1;
+}*/
+
+.player_info.country {
+>>>>>>> 99d42040e817ee4d38997c232241b8f2e5af6615
 font-family: 'Dekko', cursive;
 background-color: #DEB887;
 }
@@ -256,11 +381,6 @@ background: #FFF url("../treblestaffsheet.png");
 
 body.hall {
   background-color: black;
-}
-
-h1.logo {
-  font-family: "Sigmar One";
-  color: #00cbcb;
 }
 
 h2.hall {
@@ -361,14 +481,14 @@ h2.rap {
 }
 
 h3.rap {
-  font-family: Georgie; serif;
+  font-family: Georgia; serif;
   color: #3449B7;
 }
 
 p.rap {
   font-size: 16px;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: Georgia, sans-serif;
   opacity: 1;
 }
 
