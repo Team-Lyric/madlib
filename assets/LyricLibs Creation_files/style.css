@@ -17,7 +17,8 @@ main {
 
 }
 
-/*header {
+
+header {
 
  font-family: 'Shadows Into Light', cursive;
  font-size: 100px;
@@ -25,22 +26,14 @@ main {
  display: inline;
  position: relative;
 
-}*/
-
-header {
-  margin-left: 15px;
-}
-
-img.banner {
-  height: 120px;
 }
 
 div.container {
   padding: 50px;
-   margin-left: 90px;
+   margin-left: -300 px;
    margin-top: -300px;
-   width: 500px;
-   height: 500px;
+   width: 600px;
+   height: 600px;
    top: 30%;
    left: 30%;
    position: relative;
@@ -48,159 +41,59 @@ div.container {
 
 img.record1 {
   position: absolute;
-  height: 500px;
-  width: 500px;
-  z-index: 1;
+  height: 600px;
+  width: 600px;
+  z-index: 2;
+}
+
+
+img.record_hover {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    z-index: 1;
 }
 
 #rock_link {
   position: absolute;
   top: 50px;
   left: 50px;
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   border: 0px;
-  z-index: 2;
+  z-index: 3;
 }
 
 #pop_link {
   position: absolute;
   top: 50px;
   right: 50px;
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   border: 0px;
-  z-index: 2;
+  z-index: 3;
 }
 
 #rnb_link {
   position: absolute;
-  top: 300px;
+  top: 350px;
   left: 50px;
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   border: 0px;
-  z-index: 2;
+  z-index: 3;
 }
 
 #country_link {
   position: absolute;
-  top: 300px;
-  right: 50px;
-  height: 250px;
-  width: 250px;
-  border: 0px;
-  z-index: 2;
-}
-
-#rock_piece {
-  top: 50px;
-  left: 60px;
-  height: 250px;
-  width: 250px;
-  border: 0px;
-  z-index: : 2;
-}
-
-#pop_piece {
-  top: 300px;
-  right: 50px;
-  height: 250px;
-  width: 250px;
-  border: 0px;
-  opacity: 0;
-}
-
-#rock_piece {
-  /*position: absolute;
-  top: 50px;
-  left: 60px;*/
-  display: block;
-  height: 250px;
-  width: 250px;
-  border: 0px;
-  opacity: 0;
-}
-
-#pop_piece {
-  /*position: absolute;
-  top: 0px;
-  right: -10px;*/
-  height: 250px;
-  width: 250px;
-  border: 0px;
-  opacity: 0;
-  display: block;
-}
-
-#rnb_piece {
-  /*position: absolute;
-  top: 250px;
-  left: 60px;*/
-  height: 250px;
-  width: 250px;
-  border: 0px;
-  opacity: 0;
-  display: block;
-}
-
-#country_piece {
-  /*position: absolute;
-  top: 250px;
-  right: 40px;*/
-  height: 250px;
-  width: 250px;
-  border: 0px;
-  opacity: 0;
-  display: block;
-}
-
-/*#rock_piece:hover {
-  position: absolute;
-  top: 50px;
-  left: 60px;
-  height: 300px;
-  width: 300px;
-  border: 0px;
-}
-
-#pop_piece:hover {
->>>>>>> a3932997104d0e115d7c210b27635488715e4181
-  position: absolute;
-  top: 0px;
-  right: -10px;
-  height: 250px;
-  width: 250px;
-  border: 0px;
-<<<<<<< HEAD
-  opacity: 0;
-}
-
-#rnb_piece {
-  position: absolute;
-  top: 250px;
-  left: 60px;
-  height: 250px;
-  width: 250px;
-  border: 0px;
-  opacity: 0;
-}
-
-#country_piece {
-=======
-}
-
-#rnb_piece:hover {
-  position: absolute;
   top: 350px;
-  left: 60px;
+  right: 50px;
   height: 300px;
   width: 300px;
   border: 0px;
-  opacity: 1;
+  z-index: 3;
 }
 
-<<<<<<< HEAD
 
 .dark-matter {
     margin-left: auto;
@@ -257,6 +150,7 @@ img.record1 {
 }
 .dark-matter select {
     background: #DFDFDF url('down-arrow.png') no-repeat right;
+    background: #DFDFDF url('down-arrow.png') no-repeat right;
     appearance:none;
     -webkit-appearance:none;
     -moz-appearance: none;
@@ -272,8 +166,7 @@ img.record1 {
     padding: 5px 0px 0px 5px;
     width: 70%;
 }
-
-button {
+.dark-matter .button {
     background: #FFCC02;
     border: none;
     padding: 10px 25px 10px 25px;
@@ -288,99 +181,68 @@ button {
     -moz-box-shadow:1px 1px 1px #3D3D3D;
 }
 
-dark-matter.button:hover {
+.dark-matter .button:hover {
     color: #333;
     background-color: #EBEBEB;
 }
 
-#player_info_country {
-=======
-#country_piece:hover {
->>>>>>> a3932997104d0e115d7c210b27635488715e4181
-  position: absolute;
-  top: 250px;
-  right: 40px;
-  height: 250px;
-  width: 250px;
-  border: 0px;
-<<<<<<< HEAD
-  opacity: 0;
-}
-=======
-  opacity: 1;
-}*/
-
 .player_info.country {
->>>>>>> 99d42040e817ee4d38997c232241b8f2e5af6615
 font-family: 'Dekko', cursive;
 background-color: #DEB887;
 }
 
-#player_info_rock {
+.rock_player_info {
   position: relative;
+
+  width  : 740px;
+  height : 498px;
+  margin : 0 auto;
+
+  background: #FFF url("../assets/treblestaffsheet.png");
+
 font-family: 'Permanent Marker', cursive;
 background-color: #A1E68A;
 }
 
 
-#player_info_rnb {
+.player_info.rnb {
 font-family: 'Graffiti Treat';
 background-color: #70CAD4;
-
 }
 
-#player_info_pop {
+.player_info.pop {
   background-color: #BF82E8;
 font-family: 'Covered By Your Grace', cursive;
 }
 
-splatter.country_lyrics {
+.country_lyrics {
 font-family: 'Dekko', cursive;
-width  : 740px;
-height : 498px;
-margin : 0 auto;
-
-
-background: #FFF url("../treblestaffsheet.png");
-
+background-image: url("greensplat.png");
 }
 
-splatter.rock_lyrics {
+.rock_lyrics {
 font-family: 'Permanent Marker', cursive;
-background-image: url("../redsplat.png");
-width  : 740px;
-height : 498px;
-margin : 0 auto;
-
-background: #FFF url("../treblestaffsheet.png");
-
+background-image: url("redsplat.png");
 }
 
 
-#rnb_lyrics {
+.rnb_lyrics {
 font-style: 'Graffiti Treat';
-background-image: url("../bluesplat.png");
-width  : 740px;
-height : 498px;
-margin : 0 auto;
-
-background: #FFF url("../treblestaffsheet.png");
-
+background-image: url("bluesplat.png");
 }
 
-#pop_lyrics {
+.pop_lyrics {
 font-family: 'Covered By Your Grace', cursive;
-background-image: url("../purple.png");
-width  : 740px;
-height : 498px;
-margin : 0 auto;
-
-background: #FFF url("../treblestaffsheet.png");
-
+background-image: url("purplesplat.png");
 }
 
 body.hall {
   background-color: black;
+}
+
+h1.logo {
+  font-family: "Sigmar One";
+  color: #00cbcb;
 }
 
 h2.hall {
@@ -481,14 +343,14 @@ h2.rap {
 }
 
 h3.rap {
-  font-family: Georgia; serif;
+  font-family: Georgie; serif;
   color: #3449B7;
 }
 
 p.rap {
   font-size: 16px;
   font-weight: bold;
-  font-family: Georgia, sans-serif;
+  font-family: sans-serif;
   opacity: 1;
 }
 
