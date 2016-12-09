@@ -8,7 +8,6 @@ var users = [];
 var inputCounter = 0;
 var genres = ['rock', 'pop', 'randb', 'country']; //repeat from page one script
 var wordType; // pulled from from .needed array
-var finished = false;
 var currentUser;
 
 //capture different areas of the HTML
@@ -18,25 +17,42 @@ var gameForm = document.getElementById('game_input');
 var lyricDisplayArea = document.getElementById('lyrics_load');
 
 //template constructor
-function Template ( title, template, needed, input, lyricLib, grenre){
+function Template ( title, template, needed, input, lyricLib, genre){
   this.songTitle = title; //song title *string*
   this.template = template; // string of lyrics with omitted words *string*
   this.needed = needed; // list of omitted words (as parts of speech) in order of appearance in this.template *array*
   this.input = input; // user input by word *array*
   this.lyricLib = lyricLib; // array of user input words, order and length will correspond to this.needed array*array*
   this.genre = genre;
-}
-Template.prototype.insert = function () {
-  for(var j = 0 ; j < this.input.length; j++ ){ //for every word in the input array, we need to find a home
-    for( var i = 0; i < this.lyricLib.length; i++){
-      if ( this.lyricLib[i] === '*reaplceme*'){ //check every index in lyric lib to identify placeholders
-        this.lyricLib[i] = this.input[j]; //if its a word the needs eplacing, replace it with the word in corresponding input array index
-        break;
-      }//end if
-    }; //end for loop looking through each value of lyricLib array for a home for current value of index in input array
-  } // end of for loop goint over each value in the input array;
-};
 
+  this.insert = function () {
+    for(var j = 0 ; j < this.input.length; j++ ){ //for every word in the input array, we need to find a home
+      for( var i = 0; i < this.lyricLib.length; i++){
+        if ( this.lyricLib[i] === '*reaplceme*'){ //check every index in lyric lib to identify placeholders
+          this.lyricLib[i] = this.input[j]; //if its a word the needs eplacing, replace it with the word in corresponding input array index
+          break;
+        }//end if
+      }; //end for loop looking through each value of lyricLib array for a home for current value of index in input array
+    } // end of for loop goint over each value in the input array;
+  };
+
+}
+// Template.prototype.insert = function () {
+//   for(var j = 0 ; j < this.input.length; j++ ){ //for every word in the input array, we need to find a home
+//     for( var i = 0; i < this.lyricLib.length; i++){
+//       if ( this.lyricLib[i] === '*reaplceme*'){ //check every index in lyric lib to identify placeholders
+//         this.lyricLib[i] = this.input[j]; //if its a word the needs eplacing, replace it with the word in corresponding input array index
+//         break;
+//       }//end if
+//     }; //end for loop looking through each value of lyricLib array for a home for current value of index in input array
+//   } // end of for loop goint over each value in the input array;
+// };
+/****************************************************
+the above was taken out in favor of adding the method
+into the constructor listeral instead of the prototype
+so that if these objects are placed into storage they
+are retrieved with all their funtionality intact
+******************************************************/
 
 var popTemplate1 = new Template (/*title*/'Like a Virgin' , /*template*/ '[Verse 1] \n I made it through the wilderness \n Somehow I made it through \n Didn\'t know how lost I was until I found you \n I was beat, incomplete, I\'d been had \n I was' + '***Adjective***' + ' and ' + '***Color***' + ', but you made me feel \n Yeah, you made me feel shiny and new \n [Chorus 1] \n  \n Like a ' + '***Noun***' + ' \n Touched for the very first time \n Like a ' + '***Noun***' + ' \n When your heart beats next to mine \n [Verse 2] \n Gonna ' + '***Verb***' + '  you all my love, boy \n My fear is fading fast \n Been saving it all for you, cause only ' + '***Noun***' + ' can last \n You\'re so fine and you\'re mine \n Make me ' + '***Adjective***' + ', yeah, you make me bold \n Oh, your love  thawed out \n Yeah, your ' + '***Noun***' + ' thawed out what was scared and cold \n \n [Chorus 2] \n Like a ' + '***Noun***' + ' (hey) \n Touched for the very first time \n Like a ' + '***Noun***' + ' \n With your heart next to mine \n \n [Verse 3] \n You\'re so fine and you\'re mine \n I\'ll be yours \'til the end of ' + '***Noun***' + ' \n \'Cause you made me ' + '***Verb***' + ' \n Yeah, you made me ' + '***Verb***' + ' I\'ve nothing to hide \n \n [Chorus 2] \n Like a ' + '***Noun***' + ' (hey) \n touched for the very first time \n Like a ' + '***Noun***' + ' \n With your ' + '***Body-Part***' + ' beat next to mine \n \n [Outro] \n Like a ' + '***Noun***' + ' \n Like a ' + '***Noun***' + ' \n Feels so good inside \n When you hold me, and your ' + '***Body-Part***' + ' beats, and you Noun me \n Ooh, ' + '***Noun***' + ' yeah \n Can\'t you hear my ' + '***Body-Part***' + ' beat for the very first time ', //newline for readability
  //needed
@@ -188,7 +204,7 @@ function handleGetter (event){ //
     console.log('\n\n\nat this point, ' + thisSong.input + ' should be equal to: ' + newWords);//double check
     console.log('\n\n\n this should be the NEW lyrics: \n\n' + thisSong.lyricLib); //
 
-    currentUser.sessionCash = thisSong; // add the finished lyricLib to to the authoring useres cash property
+    currentUser.sessionCash.push(thisSong); // add the finished lyricLib to to the authoring useres cash property
     users.push(currentUser); // add the current user into the users array
     var lsUsers = JSON.stringify(users); //stringify
     localStorage.setItem( 'users', lsUsers); //the user object and all associated data is sent to local storage
@@ -223,14 +239,18 @@ hOfButton.addEventListener('click', hOfHandler);
 function hOfHandler (event){ //"post" this sessions lyricLib on the Hall of Fame
   event.preventDefault();
   currentUser.noPosted++; //iterate counter to keep track of how many the user wishes to display in the Hall of Fame
-  var moveToHoF = currentUser.sessionCash[0];
-  currentUser.postedLyricLib.push(moveToHoF);
+  var moveToHoF = currentUser.sessionCash[0];//move from session cash into a var for moving
+  currentUser.postedLyricLib.push(moveToHoF);//move to a more "permanent" storage location for libs that display to the HoF
   currentUser.sessionCash = []; //clear session cash
   for(var k = 0; k < users.lenth; k++){
     if (currentUser.name === users[k].name){ //find index for current user in users array
-      users[k] = currentUser; //overwrite old user data with new
+      users[k] = currentUser; //overwrite old user data with new currentUser was instanciated empty and has been gaining data throughotu the game process. The last, and only time the currentUser was saved to local storage was right after it was created, so we need to save the state of currentUser and its contents at the end over the state of currentUser at declaration.
     }//end of if statement
   }//end of for loop
-  lsUsers = JSON.stringify(lsUsers);
+
+  var lsUsers = JSON.stringify(users);
   localStorage.setItem('users', lsUsers);//restrigify and save new values for thisUser over previous entry in LocalStorage
+
+  alert('Entering the HALL OF FAME');
+  window.location = 'index3.html'; //send them to the hall of fame!
 }
