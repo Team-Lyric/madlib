@@ -27,3 +27,43 @@ var countryTemplate1 = new Template (/*title*/'Walkin\' After Midnight',/*templa
 ['Verb Ending in –ing', 'Verb Ending in –ing', 'Verb Ending in –ing', 'Verb', 'Verb Ending in –ing', 'Verb Ending in –ing', 'Verb Ending in –ing', 'Plant Species', 'Verb Ending in –ing', 'Verb Ending in –ing', 'Plural Noun', 'Verb', 'Adjective', 'Verb Ending in –ing', 'Verb Ending in –ing', 'Verb Ending in –ing', 'Verb Ending in –ing', 'Plant Species', 'Verb Ending in –ing', 'Verb Ending in –ing', 'Plural Noun', 'Verb', 'Adjective', 'Verb Ending in –ing', 'Verb Ending in –ing', 'Verb Ending in –ing'],
 [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y],
 'I go out ' + a + ' after midnight \n Out in the moonlight  \n Just like we used to do \n I\'m always ' + b + 'after midnight ' + c + ' for you \n I ' + d + ' for miles along the highway \n Well, that\'s just my way \n Of sayin\' I love you \n I\'m always ' + e + ' after midnight, ' + f + ' for you \n I stop to see a ' + g + ' ' + h + ' ' + i + ' on his pillow \n Maybe he\'s ' + j + ' for me \n And as the ' + k + 'turn gloomy \n Night winds ' + l + ' to me \n I\'m ' + m + ' as I can be \n I go out ' + n + ' after midnight \n Out in the starlight \n Just hopin\' you may be \n Somewhere a-' + o + ' after midnight, ' + p + ' for me \n I stop to see a ' + q + ' ' + r + ' ' + s + ' on his pillow \n Maybe he\'s ' + t + ' for me \n And as the ' + u + ' turn gloomy \n Night winds ' + v + ' to me \n I\'m ' + w +  'as I can be \n I go out ' + x + ' after midnight \n Out in the starlight \n Just hopin\' you may be \n Somewhere a-' + y + ' after midnight, ' + z + ' for me \n');
+
+var hofFill = document.createElement('div');
+hofFill.className = 'HoF';
+document.getElementById('main_hall').appendChild(div);
+/*My reasoning for the project:
+var lyricLib = [];
+
+function userInfo (userName, userEmail) { //wrap this in a for loop?
+  this.name = userName;
+  this.email = userEmail;
+  this.lyricLib = lyricLib;
+}
+
+var userInfoSubmit = document.getElementById('info_submit');
+var storedInfo = localStorage.getItem('userInfo'); //this may have to be the same as getItem lyricLib
+
+//we need an if/else statement that parses stored userInfo
+
+var hallOfFameSubmit = document.getElementById('HoF');
+var storedSubmits = localStorage.getItem('lyricLib'); //maybe should change this to userInfo
+
+if (storedSubmits) {
+  lyricLib = JSON.parse(storedSubmits);
+} else {
+  for(var i = 0; i < paths.length; i++){
+    var newLyricLib = new userInfo(lyricLib[i]); //creates a new userInfo instance and attaches it to our object
+    lyricLib.push(newLyricLib); //pushes to an array of all of our items
+  }
+}
+
+
+hallOfFameSubmit.addEventListener('click', clickHandler2);
+
+function clickHandler2(event) {
+  event.preventDefault();
+
+function saveData() {
+  var itemsJSON = JSON.stringify(lyricLib);
+  localStorage.setItem('lyricLib', lyricLibJSON);
+};*/
