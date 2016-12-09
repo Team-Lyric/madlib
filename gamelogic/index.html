@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8
@@ -12,21 +12,31 @@
     </header>
     <main class="main_create">
 
-      <form class="tbd" id ="player_info"> <!-- *****ALTEREDBYWILL*****This is the form that needs to "disappear" when info is entered-->
+
+
+         <form class ="country_player">
+           <form class="rnb_player">
+             <form class="pop_player">
+               <form class="rock_player">
+      <form id = "player_info"> <!-- *****ALTEREDBYWILL*****This is the form that needs to "disappear" when info is entered-->
         Player Name: <br /><input type="text" name="name" id="name"></input><br /><!-- ******ALTEREDBYWILL****** id attribute-->
         Email Address: <br /><input type="text" name="email" id="email"></input><!-- ******ALTEREDBYWILL****** id attribute-->
         <button type="submit" id ="new_user">Let's Play!</button>  <!-- ******ALTEREDBYWILL****** id attribute-->
       </form>
 
-      <form class="tbd" id="game_input" style='visibility:hidden;'> <!-- This is only made visible after a track is chosen on the main page and the previous form w/ email & player name has been chosen-->
-          PLEASE ENTER A
-          <section id = "splatter">
-            <!--background of section is "splat" img, text on top is large, clear and is a word drawn from the needed array of the template object  -->
-          </section>
-          <input type="text" class="game_input" id="getterField"></input>
-          <button type="submit" id="getterButton" >Next</button>
-          <section id="wordCount">
 
+      <form id="game_input" style='visibility:hidden;'> <!-- This is only made visible after a track is chosen on the main page and the previous form w/ email & player name has been chosen-->
+          PLEASE ENTER A
+            <section class="splatter">
+                  <section id="pop_lyrics">
+               <section id="rnb_lyrics">
+            <section id="country_lyrics">
+            <section id="rock_lyrics">
+
+
+            <!--background of section is "splat" img, text on top is large, clear and is a word drawn from the needed array of the template object  -->input type="text" class="game_input" id="getterField"></input>
+          <input type="submit" value="Text"></input>
+          <section id="wordCount">
           </section>
       </form>
 

@@ -1,3 +1,88 @@
-.pop{
-  background-color: lightblue;
+
+.create {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+
+}
+
+
+.country_player {
+font-family: 'Dekko', cursive;
+background-color: #DEB887;
+}
+
+.rock_player {
+  position: relative;
+font-family: 'Permanent Marker', cursive;
+background-color: #A1E68A;
+}
+
+
+.rnb_player {
+font-family: 'Graffiti Treat';
+background-color: #70CAD4;
+
+}
+
+.pop_player {
+  background-color: #BF82E8;
+font-family: 'Covered By Your Grace', cursive;
+}
+
+
+
+
+#game_input {
+margin-bottom: 20px;
+margin-top: 10px;
+width:100%;
+padding: 15px;
+border-radius:5px;
+border:1px solid #7ac9b7;
+}
+
+
+
+#country_lyrics {
+font-family: 'Dekko', cursive;
+
+width  : 740px;
+height : 498px;
+margin : 0 auto;
+background: #FFF url("../treblestaffsheet.png");
+
+}
+
+#rock_lyrics {
+font-family: 'Permanent Marker', cursive;
+background-image: url("../redsplat.png");
+width  : 740px;
+height : 498px;
+margin : 0 auto;
+
+background: #FFF url("../treblestaffsheet.png");
+
+}
+
+#rnb_lyrics {
+font-style: 'Graffiti Treat';
+background-image: url("../bluesplat.png");
+width  : 740px;
+height : 498px;
+margin : 0 auto;
+
+background: #FFF url("../treblestaffsheet.png");
+}
+
+#pop_lyrics {
+font-family: 'Covered By Your Grace', cursive;
+background-image: url("../purple.png");
+width  : 740px;
+height : 498px;
+margin : 0 auto;
+background: #FFF url("../treblestaffsheet.png");
 }
