@@ -52,10 +52,10 @@ var rNbTemplate1 = new Template ( 'Jin N Juic', ' ', [' ', ' '], [' ',' '], ' ')
 
 var countryTemplate1 = new Template ( 'Walking After Midnight ', ' ', [' ', ' '], [' ',' '], ' ');
 
-var rockSongs = [rockTemplate1];
-var countrySongs = [countryTemplate1];
-var popSongs = [popTemplate1];
-var rNbSongs = [rNbTemplate1];
+var rockSongs = ['rock', rockTemplate1];
+var countrySongs = ['country', countryTemplate1];
+var popSongs = ['pop', popTemplate1];
+var rNbSongs = ['rnb', rNbTemplate1];
 var allSongs = [rockSongs, countrySongs, popSongs, rNbSongs];
 
 //set page style
@@ -70,7 +70,7 @@ var sessionTemplate; // which song are we using this session
 function setSessionTemplate (){ // pick a "random" song from the songs in the genre the user picked
   var rand = 0;
   var templateChoice;
-  function genrand (min, max){
+  function genrand (max, min){
     min = min;
     max = max;
     rand = Math.floor(Math.random() * (max - min)) + min;
@@ -81,7 +81,7 @@ function setSessionTemplate (){ // pick a "random" song from the songs in the ge
       //rock
       // templateChoice = rockTemplate1 //the code below should do this ( given that rockTemplate1 is the only element in rockSongs)
     console.log('true if equal: ' + genreChoice + ' , ' + genres[0]);
-    rand = genrand(rockSongs.length, 0);
+    rand = genrand(rockSongs.length, 1);
     templateChoice = rockSongs[rand];
 
   }
@@ -89,21 +89,21 @@ function setSessionTemplate (){ // pick a "random" song from the songs in the ge
       //pop
       // templateChoice = popTemplate1 //the code below should do this ( given that popTemplate1 is the only element in popSongs)
     console.log('true if equal: ' + genreChoice + ' , ' + genres[1]);
-    rand = genrand(popSongs.length , 0);
+    rand = genrand(popSongs.length , 1);
     templateChoice = popSongs[rand];
   }
   else if (genreChoice === genres[2]){
       //rNb
       // templateChoice = rNbTemplate1 //the code below should do this ( given that rNbTemplate1 is the only element in rNbSongs)
     console.log('true if equal: ' + genreChoice + ' , ' + genres[2]);
-    rand = genrand( rNbSongs.length, 0);
+    rand = genrand( rNbSongs.length, 1);
     templateChoice = rNbSongs[rand];
   }
   else if (genreChoice === genres[3]){
       //country
       // templateChoice = countryTemplate1 //the code below should do this ( given that countryTemplate1 is the only element in countrySongs)
     console.log('true if equal: ' + genreChoice + ' , ' + genres[2]);
-    rand = genrand( countrySongs.length, 0);
+    rand = genrand( countrySongs.length, 1);
     templateChoice = countrySongs[rand];
   }
   else{
