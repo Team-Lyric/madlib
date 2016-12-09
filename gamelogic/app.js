@@ -9,6 +9,7 @@ var inputCounter = 0;
 var genres = ['rock', 'pop', 'randb', 'country']; //repeat from page one script
 var wordType; // pulled from from .needed array
 var finished = false;
+var currentUser;
 
 //capture different areas of the HTML
 var splat = document.getElementById('splatter');
@@ -146,6 +147,7 @@ function clickHandler (event) {
   wordType = sessionTemplate.needed[0];   // set first word type
   splat.textContent = wordType;
 
+  currentUser = thisUser;
 }
 
 //set event listener for game input form
@@ -182,12 +184,12 @@ function handleGetter (event){ //
     thisSong.insert();
 
     console.log('\n\n\nat this point, ' + thisSong.input + ' should be equal to: ' + newWords);//double check
-    console.log('\n\n\n this should be the NEW lyrics: \n\n' + thisSong.lyriclib); //
+    console.log('\n\n\n this should be the NEW lyrics: \n\n' + thisSong.lyricLib); //
 
-    thisUser.sessionCash = thisSong; // add the finished lyricLib to to the authoring useres cash property
-    users.push(thisUser); // add the current user into the users array
-    lsUsers = JSON.stringify(users); //stringify
-    localStorage.setItem( users, lsUsers); //the user object and all associated data is sent to local storage
+    currentUser.sessionCash = thisSong; // add the finished lyricLib to to the authoring useres cash property
+    users.push(currentUser); // add the current user into the users array
+    var lsUsers = JSON.stringify(users); //stringify
+    localStorage.setItem( 'users', lsUsers); //the user object and all associated data is sent to local storage
 
     lyricDisplayArea.style.visibility = 'visible'; //reveal final display lyricsLib section
     game_input.style.visibility = 'hidden'; //hide game input form;
@@ -203,11 +205,11 @@ function handleGetter (event){ //
 }//close handler
 
 function render (templateObject){
-  var rendtitle = templateObject.title; //title of template object song
+  var rendtitle = templateObject.songTitle; //title of template object song
   var rendlyriclib = templateObject.lyricLib; // actual lyrics with user input
 
   var displaytitle = document.getElementById('title'); //point to HTML location for title
-  var displayLyrics = document.getElementById('finishedLab'); //point to HTML location of lyricLib
+  var displayLyrics = document.getElementById('finishedLib'); //point to HTML location of lyricLib
 
   displaytitle.textContent = rendtitle; //pipe in text to HTML
   displayLyrics.textContent = rendlyriclib;
