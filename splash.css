@@ -1,0 +1,43 @@
+#recordNav{
+height: 600px;
+width: 600px;
+background-image: url("wills/record_nav_optimized_large.png");
+background-color: blue;
+}
+#rock{
+  height: 300px;
+  width: 300px;
+  background-color: red;
+}
+#rock:hover{
+  background-image: url();
+}
+#pop{
+  background-color: pink;
+  display: inline;
+  height: 300px;
+  width: 300px;
+}
+#pop:hover{
+  background-image: url();
+
+}
+#rnb{
+  background-color: orange;
+  height: 300px;
+  width: 300px;
+}
+#rnb:hover{
+  background-image: url();
+
+}
+#country{
+  background-color: pink;
+  display: inline;
+  height: 300px;
+  width: 300px;
+}
+#country:hover{
+  background-image: url();
+
+}

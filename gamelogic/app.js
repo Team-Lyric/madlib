@@ -219,7 +219,16 @@ var hOfButton = document.getElementById('hOf');
 hOfButton.addEventListener('click', hOfHandler);
 
 function hOfHandler (event){ //"post" this sessions lyricLib on the Hall of Fame
-  var moveToHoF = thisUser.sessionCash[0];
-  thisUser.postedLyricLib.push(moveToHoF);
-  localStorage.setItem(users, JSON.stringify(thisUser));//restrigify and save new values for thisUser over previous entry in LocalStorage
+  event.preventDefault();
+  currentUser.noPosted++; //iterate counter to keep track of how many the user wishes to display in the Hall of Fame
+  var moveToHoF = currentUser.sessionCash[0];
+  currentUser.postedLyricLib.push(moveToHoF);
+  currentUser.sessionCash = []; //clear session cash
+  for(var k = 0; k < users.lenth; k++){
+    if (currentUser.name === users[k].name){ //find index for current user in users array
+      users[k] = currentUser; //overwrite old user data with new
+    }//end of if statement
+  }//end of for loop
+  lsUsers = JSON.stringify(lsUsers);
+  localStorage.setItem('users', lsUsers);//restrigify and save new values for thisUser over previous entry in LocalStorage
 }
