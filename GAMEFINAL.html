@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Dekko|Covered+By+Your+Grace|Shadows+Into+Light/Permanent+Marker|Bungee+Shade|Graffiti+Treat|Chewy|Luckiest+Guy|Monoton|Paytone+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSSPRIMARY.css">
+    <title>LyricLibs Creation</title>
+  </head>
+  <body>
+  <body class="create">
+    <header class="header_create">
+      <img class="logo" src="assets/LyricLibsBanner.png" class="banner">
+    </header>
+    <main class="main_create">
+
+      <form class="tbd" id ="player_info"> <!-- *****ALTEREDBYWILL*****This is the form that needs to "disappear" when info is entered-->
+        Player Name: <br /><input type="text" name="name" id="name"></input><br /><!-- ******ALTEREDBYWILL****** id attribute-->
+        Email Address: <br /><input type="text" name="email" id="email"></input><!-- ******ALTEREDBYWILL****** id attribute-->
+        <button type="submit" id ="new_user">Let's Play!</button>  <!-- ******ALTEREDBYWILL****** id attribute-->
+      </form>
+
+      <form class="tbd" id="game_input" style='visibility:hidden;'> <!-- This is only made visible after a track is chosen on the main page and the previous form w/ email & player name has been chosen-->
+          PLEASE ENTER A
+          <section id = "splatter">
+            <!--background of section is "splat" img, text on top is large, clear and is a word drawn from the needed array of the template object  -->
+          </section>
+          <input type="text" class="game_input" id="getterField"></input>
+          <button type="submit" id="getterButton" >Next</button>
+          <section id="wordCount">
+
+          </section>
+      </form>
+
+      <div class="lyrics" id="lyrics_load" style='visibility:hidden;'> <!-- This is the div for when the lyrics load -->
+        <h1 id="title"></h1>
+        <article class="" id="finishedLib">
+
+        </article>
+        <br>
+        <section id="controllPannel">
+            Like your LyricLib? Want to share with the world?<br>
+            Add your unique LyricLib to the HALL of FAME!
+            <button type="button" name="hOf" id="hOf">Add</button>
+        </section>
+      </div>
+
+    </main>
+
+    <footer class="footer_create">
+      <nav>
+      </nav>
+    </footer>
+    <script type="text/javascript" src="APP.js"></script>
+  </body>
+</html>

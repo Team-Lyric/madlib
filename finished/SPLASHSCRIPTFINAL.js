@@ -50,18 +50,18 @@ rnb.addEventListener('click', rnbHandler);
 country.addEventListener('click', countryHandler);
 
 function countryHandler(event) {
-  event.preventDefault();
+  //event.preventDefault();
   localStorage.setItem('genreChoice', 'country');
 }
 function rnbHandler(event){
-  event.preventDefault();
+  //event.preventDefault();
   localStorage.setItem('genreChoice', 'rnb');
 }
 function popHandler(event){
-  event.preventDefault();
+  //event.preventDefault();
   localStorage.setItem('genreChoice', 'pop');
 }
 function rockHandler(event){
-  event.preventDefault();
+  //event.preventDefault();
   localStorage.setItem('genreChoice', 'rock');
 }
