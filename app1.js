@@ -1,38 +1,38 @@
 'use strict';
 
-var rock = document.getElementById("rock_piece");
-var pop = document.getElementById("pop_piece");
-var rnb = document.getElementById("'rnb_piece'");
-var country = document.getElementById("country_piece");
+var rockSplash = document.getElementById("rock_piece");
+var popSplash = document.getElementById("pop_piece");
+var rnbSplash = document.getElementById("'rnb_piece'");
+var countrySplash = document.getElementById("country_piece");
 
-rock.addEventListener("mouseover", function(event) {
+rockSplash.addEventListener("mouseover", function(event) {
   event.target.style.opacity = 1;
 }, false);
 
-rock.addEventListener("mouseout", function(event) {
+rockSplash.addEventListener("mouseout", function(event) {
   event.target.style.opacity = 0;
 }, false);
 
-pop.addEventListener("mouseover", function(event) {
+popSplash.addEventListener("mouseover", function(event) {
   event.target.style.opacity = 1;
 }, false);
 
-pop.addEventListener("mouseout", function(event) {
+popSplash.addEventListener("mouseout", function(event) {
   event.target.style.opacity = 0;
 }, false);
 
-rnb.addEventListener("mouseover", function(event) {
+rnbSplash.addEventListener("mouseover", function(event) {
   event.target.style.opacity = 1;
 }, false);
 
-rnb.addEventListener("mouseout", function(event) {
+rnbSplash.addEventListener("mouseout", function(event) {
   event.target.style.opacity = 0;
 }, false);
 
-country.addEventListener("mouseover", function(event) {
+countrySplash.addEventListener("mouseover", function(event) {
   event.target.style.opacity = 1;
 }, false);
 
-country.addEventListener("mouseout", function(event) {
+countrySplash.addEventListener("mouseout", function(event) {
   event.target.style.opacity = 0;
 }, false);
