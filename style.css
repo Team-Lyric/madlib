@@ -17,8 +17,7 @@ main {
 
 }
 
-
-header {
+/*header {
 
  font-family: 'Shadows Into Light', cursive;
  font-size: 100px;
@@ -26,6 +25,14 @@ header {
  display: inline;
  position: relative;
 
+}*/
+
+header {
+  margin-left: 15px;
+}
+
+img.banner {
+  height: 120px;
 }
 
 div.container {
@@ -94,6 +101,50 @@ img.record_hover {
   z-index: 3;
 }
 
+#rock_piece:hover {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 300px;
+  width: 300px;
+  border: 0px;
+  z-index: 4;
+  background-color: blue;
+}
+
+#pop_piece {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 300px;
+  width: 300px;
+  border: 0px;
+  z-index: 4;
+  background-color: blue;
+}
+
+#rnb_piece:hover {
+  position: absolute;
+  top: 350px;
+  left: 50px;
+  height: 300px;
+  width: 300px;
+  border: 0px;
+  z-index: 4;
+  background-color: blue;
+}
+
+#country_piece:hover {
+  position: absolute;
+  top: 350px;
+  right: 50px;
+  height: 300px;
+  width: 300px;
+  border: 0px;
+  z-index: 4;
+  background-color: blue;
+}
+
 .player_info.country {
 font-family: 'Dekko', cursive;
 background-color: #DEB887;
@@ -139,11 +190,6 @@ background-image: url("purplesplat.png");
 
 body.hall {
   background-color: black;
-}
-
-h1.logo {
-  font-family: "Sigmar One";
-  color: #00cbcb;
 }
 
 h2.hall {
