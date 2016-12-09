@@ -37,10 +37,10 @@ img.banner {
 
 div.container {
   padding: 50px;
-   margin-left: -300 px;
+   margin-left: 90px;
    margin-top: -300px;
-   width: 600px;
-   height: 600px;
+   width: 500px;
+   height: 500px;
    top: 30%;
    left: 30%;
    position: relative;
@@ -48,102 +48,125 @@ div.container {
 
 img.record1 {
   position: absolute;
-  height: 600px;
-  width: 600px;
-  z-index: 2;
+  height: 500px;
+  width: 500px;
 }
 
-
-img.record_hover {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    z-index: 1;
 }
 
 #rock_link {
   position: absolute;
   top: 50px;
   left: 50px;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 3;
 }
 
 #pop_link {
   position: absolute;
   top: 50px;
   right: 50px;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 3;
 }
 
 #rnb_link {
   position: absolute;
-  top: 350px;
-  left: 50px;
-  height: 300px;
-  width: 300px;
+  top: 50px;
+  left: 0px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 3;
 }
 
 #country_link {
   position: absolute;
-  top: 350px;
-  right: 50px;
-  height: 300px;
-  width: 300px;
+  top: 50px;
+  right: 0px;
+  height: 250px;
+  width: 250px;
   border: 0px;
-  z-index: 3;
 }
 
-div:#rock_piece img:hover {
+#rock_piece {
   position: absolute;
   top: 50px;
-  left: 50px;
+  left: 60px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+}
+
+#pop_piece {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+}
+
+#rnb_piece {
+  position: absolute;
+  top: 250px;
+  left: 60px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+}
+
+#country_piece {
+  position: absolute;
+  top: 250px;
+  right: 40px;
+  height: 250px;
+  width: 250px;
+  border: 0px;
+  opacity: 0;
+}
+
+/*#rock_piece:hover {
+  position: absolute;
+  top: 50px;
+  left: 60px;
   height: 300px;
   width: 300px;
   border: 0px;
-  z-index: 2;
-  background-color: blue;
 }
 
-div#pop_piece img:hover {
+#pop_piece:hover {
   position: absolute;
   top: 50px;
   right: 50px;
   height: 300px;
   width: 300px;
   border: 0px;
-  z-index: 2;
-  background-color: blue;
 }
 
-div#rnb_piece img:hover {
+#rnb_piece:hover {
   position: absolute;
   top: 350px;
-  left: 50px;
+  left: 60px;
   height: 300px;
   width: 300px;
   border: 0px;
-  z-index: 2;
-  background-color: blue;
+  opacity: 1;
 }
 
-div#country_piece img:hover {
+#country_piece:hover {
   position: absolute;
   top: 350px;
   right: 50px;
   height: 300px;
   width: 300px;
   border: 0px;
-  z-index: 4;
-  background-color: blue;
-}
+  opacity: 1;
+}*/
 
 .player_info.country {
 font-family: 'Dekko', cursive;
