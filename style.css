@@ -50,8 +50,7 @@ img.record1 {
   position: absolute;
   height: 500px;
   width: 500px;
-}
-
+  z-index: 1;
 }
 
 #rock_link {
@@ -61,6 +60,7 @@ img.record1 {
   height: 250px;
   width: 250px;
   border: 0px;
+  z-index: 2;
 }
 
 #pop_link {
@@ -70,30 +70,34 @@ img.record1 {
   height: 250px;
   width: 250px;
   border: 0px;
+  z-index: 2;
 }
 
 #rnb_link {
   position: absolute;
-  top: 50px;
-  left: 0px;
+  top: 300px;
+  left: 50px;
   height: 250px;
   width: 250px;
   border: 0px;
+  z-index: 2;
 }
 
 #country_link {
   position: absolute;
-  top: 50px;
-  right: 0px;
+  top: 300px;
+  right: 50px;
   height: 250px;
   width: 250px;
   border: 0px;
+  z-index: 2;
 }
 
 #rock_piece {
-  position: absolute;
+  /*position: absolute;
   top: 50px;
-  left: 60px;
+  left: 60px;*/
+  display: block;
   height: 250px;
   width: 250px;
   border: 0px;
@@ -101,9 +105,10 @@ img.record1 {
 }
 
 #pop_piece {
-  position: absolute;
+  /*position: absolute;
   top: 0px;
-  right: -10px;
+  right: -10px;*/
+  display: block;
   height: 250px;
   width: 250px;
   border: 0px;
@@ -111,23 +116,25 @@ img.record1 {
 }
 
 #rnb_piece {
-  position: absolute;
+  /*position: absolute;
   top: 250px;
-  left: 60px;
+  left: 60px;*/
   height: 250px;
   width: 250px;
   border: 0px;
   opacity: 0;
+  display: block;
 }
 
 #country_piece {
-  position: absolute;
+  /*position: absolute;
   top: 250px;
-  right: 40px;
+  right: 40px;*/
   height: 250px;
   width: 250px;
   border: 0px;
   opacity: 0;
+  display: block;
 }
 
 /*#rock_piece:hover {
@@ -313,14 +320,14 @@ h2.rap {
 }
 
 h3.rap {
-  font-family: Georgie; serif;
+  font-family: Georgia; serif;
   color: #3449B7;
 }
 
 p.rap {
   font-size: 16px;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: Georgia, sans-serif;
   opacity: 1;
 }
 

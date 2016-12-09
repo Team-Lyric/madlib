@@ -1,9 +1,9 @@
 'use strict';
 
-var rockSplash = document.getElementById("rock_piece");
-var popSplash = document.getElementById("pop_piece");
-var rnbSplash = document.getElementById("'rnb_piece'");
-var countrySplash = document.getElementById("country_piece");
+var rockSplash = document.getElementById('rock_piece');
+var popSplash = document.getElementById('pop_piece');
+var rnbSplash = document.getElementById('rnb_piece');
+var countrySplash = document.getElementById('country_piece');
 
 rockSplash.addEventListener("mouseover", function(event) {
   event.target.style.opacity = 1;
