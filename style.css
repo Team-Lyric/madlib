@@ -28,72 +28,71 @@ header {
 
 }
 
-
-.circle1: hover{
-
-  position: 25%, top;
-  overflow: hidden;
-	position: relative;
-	cursor: default;
-  transform-style: scale(1);
-
+div.container {
+  padding: 50px;
+   margin-left: -300 px;
+   margin-top: -300px;
+   width: 600px;
+   height: 600px;
+   top: 30%;
+   left: 30%;
+   position: relative;
 }
 
-.circle2: hover{
-
-   clip: 25%, bottom;
-	position: relative;
-	cursor: default;
-  transform-style: scale(1);
-
-}
-
-
-
-
-.container {
-   margin: 0 auto;
-    width: 500px;
-    height: 500px;
-    border: 1px solid black;
-}
-
-
-.square {
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
-    display: inline;
-    }
-
-.square2 {
-   margin: 0 auto;
-  width: 150px;
-    height: 150px;
-   border: 1px solid black;
-   display: inline;
-}
-
-
-
-.container2 {
-  margin: 0 auto;
+img.record1 {
+  position: absolute;
   height: 600px;
   width: 600px;
-  z-index: 1;
+  z-index: 2;
 }
 
 
-.img {
-
-  width: 600px;
+img.record_hover {
+    position: absolute;
+    width: 600px;
     height: 600px;
-    margin-top: -50%;
-   margin-left: -50%;
+    z-index: 1;
 }
 
+#rock_link {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 300px;
+  width: 300px;
+  border: 0px;
+  z-index: 3;
+}
 
+#pop_link {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 300px;
+  width: 300px;
+  border: 0px;
+  z-index: 3;
+}
+
+#rnb_link {
+  position: absolute;
+  top: 350px;
+  left: 50px;
+  height: 300px;
+  width: 300px;
+  border: 0px;
+  z-index: 3;
+}
+
+#country_link {
+  position: absolute;
+  top: 350px;
+  right: 50px;
+  height: 300px;
+  width: 300px;
+  border: 0px;
+  z-index: 3;
+}
 
 .player_info.country {
 font-family: 'Dekko', cursive;
@@ -158,11 +157,12 @@ div.HoF {
   margin-left: 350px;
   margin-right: auto;
   margin-top: 30px;
+  margin-bottom: 15px;
   background-size: 300px 500;
   height: 490px;
   text-align: center;
-  background-image: url(assets/treblestaffsheet.gif);
-  opacity: .85;
+  background-image: url(assets/treblestaffsheet.png);
+  background-color: white;
   overflow: hidden;
   -webkit-transition: width 4s, height 4s;
   transition: width 4s, height 4s;
@@ -174,14 +174,15 @@ div.HoF:hover {
   margin: 0 auto;
   margin-top: 30px;
   text-align: center;
-  background-image: url(assets/treblestaffsheet.gif);
+  background-image: url(assets/treblestaffsheet.png);
+  background-color: white;
   background-size: cover;
   width: 100%;
   height: 1500px;
   overflow: hidden;
 }
 
-//*h1.country {
+h1.country {
   font-family: 'Covered By Your Grace', cursive;
 }
 
@@ -191,7 +192,7 @@ h2.country {
 
 h3.country {
   font-family: 'Montserrat';
-  color: #1F92F0;
+  color: #3449B7;
 }
 
 p.country {
@@ -208,11 +209,12 @@ h2.rock {
 }
 
 h3.rock {
-
+  font-family: 'Permanent Marker', cursive;
+  color: #3449B7;
 }
 
 p.rock {
-
+  font-family: 'Permanent Marker', cursive;
 }
 
 h1.pop {
@@ -221,6 +223,10 @@ h1.pop {
 
 h2.pop {
   font-family: 'Dekko', cursive;
+}
+
+h3.pop {
+  color: #3449B7;
 }
 
 p.pop {
@@ -235,6 +241,11 @@ h1.rap {
 h2.rap {
   font-family: Georgia; serif;
   font-size: 20px;
+}
+
+h3.rap {
+  font-family: Georgie; serif;
+  color: #3449B7;
 }
 
 p.rap {
