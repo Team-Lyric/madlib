@@ -2,7 +2,9 @@
 
 var users = retrieval ();
 readFromUsers();
-
+//You could shorten this a little bit by just returning false. The function is either returning
+//users or the fact that they're not there. So false could have represented that just as well as
+//a string that says 'none'
 function retrieval() {
   var users;
   if(localStorage.getItem('users')){ // if there is a useres array in local storage

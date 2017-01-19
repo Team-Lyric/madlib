@@ -11,6 +11,9 @@ var popSplash = document.getElementById('pop_piece');
 var rnbSplash = document.getElementById('rnb_piece');
 var countrySplash = document.getElementById('country_piece');
 
+//It's possible that this may have been the only way to adjust the opacity here.
+//But I'd guess that it would be easier to set it with a :hover psudeo selector
+//in the CSS.
 rockSplash.addEventListener('mouseover', function(event) {
   event.target.style.opacity = 1;
 }, false);
