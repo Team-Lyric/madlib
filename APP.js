@@ -50,7 +50,22 @@ into the constructor listeral instead of the prototype
 so that if these objects are placed into storage they
 are retrieved with all their funtionality intact
 ******************************************************/
-
+//Doing big strings like this is tough no matter how you do it.
+//a couple notes:
+//you could have cleared up what was happening here by declaring the template
+//variables up at the top and just passing the array in here, rather than
+//trying to pass it straight into the constructors arguments. It would be more
+//readable that way.
+//
+//There are a few places where you're concatenating strings when you don't
+//need to. For instance:
+// 'I was ' + ***Adjective***' + ' and ' + '***Color**'
+//Even if you're going to be replacing those words as it stands they're still
+//just strings. So there's no good reason to concatenate them that way.
+//
+//Generally you don't want to put comments inline like you have them here. What you would likely
+//want to do instead is describe the inputs that the consturctor takes closer to where it's
+//declared.
 var popTemplate1 = new Template (/*title*/'Like a Virgin' , /*template*/ '[Verse 1] \n I made it through the wilderness \n Somehow I made it through \n Didn\'t know how lost I was until I found you \n I was beat, incomplete, I\'d been had \n I was' + '***Adjective***' + ' and ' + '***Color***' + ', but you made me feel \n Yeah, you made me feel shiny and new \n [Chorus 1] \n  \n Like a ' + '***Noun***' + ' \n Touched for the very first time \n Like a ' + '***Noun***' + ' \n When your heart beats next to mine \n [Verse 2] \n Gonna ' + '***Verb***' + '  you all my love, boy \n My fear is fading fast \n Been saving it all for you, cause only ' + '***Noun***' + ' can last \n You\'re so fine and you\'re mine \n Make me ' + '***Adjective***' + ', yeah, you make me bold \n Oh, your love  thawed out \n Yeah, your ' + '***Noun***' + ' thawed out what was scared and cold \n \n [Chorus 2] \n Like a ' + '***Noun***' + ' (hey) \n Touched for the very first time \n Like a ' + '***Noun***' + ' \n With your heart next to mine \n \n [Verse 3] \n You\'re so fine and you\'re mine \n I\'ll be yours \'til the end of ' + '***Noun***' + ' \n \'Cause you made me ' + '***Verb***' + ' \n Yeah, you made me ' + '***Verb***' + ' I\'ve nothing to hide \n \n [Chorus 2] \n Like a ' + '***Noun***' + ' (hey) \n touched for the very first time \n Like a ' + '***Noun***' + ' \n With your ' + '***Body-Part***' + ' beat next to mine \n \n [Outro] \n Like a ' + '***Noun***' + ' \n Like a ' + '***Noun***' + ' \n Feels so good inside \n When you hold me, and your ' + '***Body-Part***' + ' beats, and you Noun me \n Ooh, ' + '***Noun***' + ' yeah \n Can\'t you hear my ' + '***Body-Part***' + ' beat for the very first time ', //newline for readability
  //needed
 [' Adjective', 'Color ', 'Noun', 'Noun', 'Verb', 'Noun', 'Adjective', 'Noun', 'Noun', 'Noun', 'Noun', 'Verb', 'Verb', 'Noun', 'noun', 'Body-Part', 'Noun', 'Noun', 'Body-Part', 'Noun', 'Body-Part'],
